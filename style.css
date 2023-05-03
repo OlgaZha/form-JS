@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form {
+	display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px;
+    background-color: rgb(240, 223, 125);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.name{
+    width: 120px;
+}
+
+.age{
+    width: 120px;
+}
+
+.age-icon{
+    margin-left: 10px;
+}
+
+.sub-button {
+    background-color: rgb(22, 22, 22);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sub-button:hover {
+    background-color: grey;
+}
+
+.row{
+    display: flex;
+    justify-content:start;
+    gap: 20px;
+    padding: 10px;
+}
+
+.gender-form{
+    margin: 10px;
+}

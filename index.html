@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form class="form" onsubmit={handleSubmit}>
+        <div class="row">
+            <label for="Name">Name</label>
+            <i class="bi bi-people"></i>
+            <input type="text" class="name" name="Name" required pattern="\S+.*" placeholder="Put your name">
+        </div>
+        <div class="row">
+            <label for="age">Age</label>
+            <i class="bi bi-plus-slash-minus age-icon"></i>
+            <input type="number" maxlength="2" min="18" max="99" class="age" id="age" required placeholder="Put your age">
+        </div>
+
+        <label class="gender-form">Gender:</label>
+        <div class="row">
+            <label for="gender"><i class="bi bi-gender-male"></i>Male</label>
+            <input type="radio" class="gender" name="gender" id="male"> 
+            <label for="gender"><i class="bi bi-gender-female"></i>Female</label>
+            <input type="radio" class="gender" name="gender" id="female" checked>
+        </div>
+        <button type="submit" class="sub-button">Submit</button>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
